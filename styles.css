@@ -1,48 +1,50 @@
 :root {
-	--start-color: #46963f;
-	--stop-color: #a01b1b;
+  --start-color: #46963f;
+  --stop-color: #a01b1b;
 }
+
 html {
   font-size: 10px;
 }
 
 body {
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-	font-size: 1.6rem;
-	background: #222;
-	margin: 0;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  background: #222;
+  margin: 0;
 }
+
 .main {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	max-width: 500px;
-	margin: 0 auto;
-	text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #counter-screen {
-	display: none;
+  display: none;
 }
 
 /*==========  Base button  ==========*/
 .button {
-	font-size: 4rem;
+  font-size: 4rem;
   padding: 15px 50px;
   border: 1px solid #c4c4c4;
   border-radius: 5px;
   color: #222;
   text-shadow: 1px 1px 1px #fff;
-	transition: all 250ms ease;
-	border-radius: 50%;
-	outline: none;
-	cursor: pointer;
+  transition: all 250ms ease;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
 }
 
 /*==========  Active State  ==========*/
 .button:active {
-	position: relative;
+  position: relative;
   top: 5px;
   box-shadow: none !important;
   transition: all 250ms ease;
@@ -50,35 +52,36 @@ body {
 
 /*==========  Start  ==========*/
 .button-start {
-	border-radius: 50%;
-	height: 50vw;
-	width: 50vw;
+  border-radius: 50%;
+  height: 50vw;
+  width: 50vw;
   background: #7cc576;
-	color: white;
-	border-color: var(--start-color);
+  color: white;
+  border-color: var(--start-color);
   box-shadow: 0px 5px 0px var(--start-color);
   text-shadow: 1px 1px 1px var(--start-color);
 }
 
 /*==========  Stop  ==========*/
 .button-stop {
-	border-radius: 10px;
-	width: 50vw;
+  border-radius: 10px;
+  width: 50vw;
   background: #df4242;
-	color: white;
-	border-color: var(--stop-color);
+  color: white;
+  border-color: var(--stop-color);
   box-shadow: 0px 5px 0px var(--stop-color);
   text-shadow: 1px 1px 1px var(--stop-color);
 }
 
 
 .time {
-	font-size: 18rem;
-	color: white;
+  font-size: 18rem;
+  color: white;
 }
+
 @media only screen and (min-width: 992px) {
-	.button-start {
-		height: 250px;
-		width: 250px;
-	}
+  .button-start {
+    height: 250px;
+    width: 250px;
+  }
 }
