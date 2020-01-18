@@ -6,7 +6,7 @@ let timeElement;
 const byId = (sel) => document.getElementById(sel);
 
 const start = () => {
-  seconds = 66;
+  seconds = 60;
   byId('start-screen').style.display = 'none';
   byId('counter-screen').style.display = 'block';
   timeElement = byId('time');
