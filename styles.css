@@ -21,7 +21,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
   max-width: 500px;
   margin: 0 auto;
   text-align: center;
@@ -56,10 +56,10 @@ body {
 
 /*==========  Start  ==========*/
 .button-start {
-  font-size: 6rem;
+  font-size: 10vw;
   border-radius: 50%;
-  height: 50vw;
-  width: 50vw;
+  height: 60vw;
+  width: 60vw;
   background-color: var(--start-color);
   border-color: var(--start-color-alt);
   box-shadow: 0px 5px 0px var(--start-color-alt);
@@ -69,7 +69,7 @@ body {
 /*==========  Stop  ==========*/
 .button-stop {
   border-radius: 10px;
-  width: 50vw;
+  width: 60vw;
   background-color: var(--stop-color);
   border-color: var(--stop-color-alt);
   box-shadow: 0px 5px 0px var(--stop-color-alt);
@@ -78,7 +78,7 @@ body {
 
 
 .time {
-  font-size: 28rem;
+  font-size: 25rem;
 }
 
 @media only screen and (min-width: 992px) {
@@ -88,5 +88,6 @@ body {
   }
   .button-start {
     height: 250px;
+    font-size: 5rem;
   }
 }
