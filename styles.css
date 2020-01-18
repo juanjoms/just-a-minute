@@ -1,6 +1,8 @@
 :root {
-  --start-color: #46963f;
-  --stop-color: #a01b1b;
+  --start-color: #7cc576;
+  --start-color-alt: #46963f;
+  --stop-color: #df4242;
+  --stop-color-alt: #a01b1b;
 }
 
 html {
@@ -8,10 +10,11 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  font-size: 1.6rem;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background: #222;
   margin: 0;
+  color: white;
+  font-weight: 100;
 }
 
 .main {
@@ -35,53 +38,55 @@ body {
   border: 1px solid #c4c4c4;
   border-radius: 5px;
   color: #222;
-  text-shadow: 1px 1px 1px #fff;
+  text-shadow: 1px 1px 1px white;
   transition: all 250ms ease;
   border-radius: 50%;
   outline: none;
   cursor: pointer;
+  color: white;
 }
 
 /*==========  Active State  ==========*/
 .button:active {
   position: relative;
   top: 5px;
-  box-shadow: none !important;
+  box-shadow: none;
   transition: all 250ms ease;
 }
 
 /*==========  Start  ==========*/
 .button-start {
+  font-size: 6rem;
   border-radius: 50%;
   height: 50vw;
   width: 50vw;
-  background: #7cc576;
-  color: white;
-  border-color: var(--start-color);
-  box-shadow: 0px 5px 0px var(--start-color);
-  text-shadow: 1px 1px 1px var(--start-color);
+  background-color: var(--start-color);
+  border-color: var(--start-color-alt);
+  box-shadow: 0px 5px 0px var(--start-color-alt);
+  text-shadow: 1px 1px 1px var(--start-color-alt);
 }
 
 /*==========  Stop  ==========*/
 .button-stop {
   border-radius: 10px;
   width: 50vw;
-  background: #df4242;
-  color: white;
-  border-color: var(--stop-color);
-  box-shadow: 0px 5px 0px var(--stop-color);
-  text-shadow: 1px 1px 1px var(--stop-color);
+  background-color: var(--stop-color);
+  border-color: var(--stop-color-alt);
+  box-shadow: 0px 5px 0px var(--stop-color-alt);
+  text-shadow: 1px 1px 1px var(--stop-color-alt);
 }
 
 
 .time {
-  font-size: 18rem;
-  color: white;
+  font-size: 28rem;
 }
 
 @media only screen and (min-width: 992px) {
+  .button-start,
+  .button-stop {
+    width: 250px;
+  }
   .button-start {
     height: 250px;
-    width: 250px;
   }
 }

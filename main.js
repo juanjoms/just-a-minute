@@ -1,22 +1,29 @@
-let seconds = 60;
+let seconds;
 let timer;
+let stopColor;
+let timeElement;
 
 const byId = (sel) => document.getElementById(sel);
 
 const start = () => {
+  seconds = 60;
   byId('start-screen').style.display = 'none';
   byId('counter-screen').style.display = 'block';
-  byId('time').textContent = seconds;
+  timeElement = byId('time');
+  timeElement.textContent = seconds;
   timer = setInterval(updateTime, 1000);
+  stopColor = getComputedStyle(document.body).getPropertyValue('--stop-color');
 }
 
 const stop = () => {
-  clearInterval(timer);
   byId('start-screen').style.display = 'block';
   byId('counter-screen').style.display = 'none';
+  clearInterval(timer);
 }
 
 const updateTime = () => {
-  byId('time').textContent = --seconds;
-  console.log(seconds);
+  timeElement.textContent = --seconds;
+  if (seconds < 0) {
+    timeElement.style.color = stopColor;
+  }
 }
